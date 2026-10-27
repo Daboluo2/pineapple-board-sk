@@ -15,7 +15,7 @@
 
 从本仓库的 [v1.1.2 Release](https://github.com/Daboluo2/pineapple-board-sk/releases/tag/v1.1.2) 下载 `pineapple-board-sk-1.1.2.zip`。解压后按下方步骤安装。
 
-### 在 Codex 中手动安装 Skill
+### 在 agent工具 中手动安装 Skill
 
 1. 解压安装包。
 2. 将其中的 `skills/pineapple-board-sk` 整个文件夹复制到用户目录的 `.agents/skills/` 下；Windows 对应 `%USERPROFILE%\.agents\skills\pineapple-board-sk\`。没有父目录时先创建，最终应能找到 `pineapple-board-sk/SKILL.md`。
@@ -36,9 +36,6 @@ python -X utf8 skills/pineapple-board-sk/scripts/build_editor.py project.json bo
 
 需要 Python 3，无需额外 Python 依赖。`project.json` 为布局数据，格式见 [可编辑排版说明](skills/pineapple-board-sk/references/editable-layout.md)。生成后用浏览器打开 `board.html`，备份时保存网页或导出完整布局 JSON。
 
-## 发布渠道
-
-本仓库用于 GitHub 源码分发和版本安装包下载；发布 GitHub Release 不等于通过 OpenAI 审核或上架官方插件目录。
 
 ## 1.1.2 更新
 
