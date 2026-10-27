@@ -1,0 +1,45 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pineapple-board-sk",
+  "version": "1.1.2",
+  "description": "竞赛展板全流程1.1.2：完整排版原则、逐图Prompt预审和拖动绘制的可编辑工作台。",
+  "keywords": [
+    "展板",
+    "设计竞赛",
+    "排版",
+    "可编辑网页",
+    "competition board",
+    "design layout"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "菠萝展板sk",
+        "shortDescription": "可控提示词 + 精准排版 + 真实结构验收",
+        "longDescription": "以信息层级、网格构图、留白分组、图文分工、字体色彩、内容适配与输出检查组织排版；避免机械矩形堆叠，保留必要矩形与隐形网格。面向工业产品、文创与包装竞赛展板的完整八步制作流程。遵循当前任务优先与逐阶段确认；先做可编辑精确几何布局，再设计无占位框视觉母版、按参考图权限制作模块，最后完成分层整合与真实交付检查。支持七类任务Prompt；每张生图先展示参考清单与正面/负面/英文补充提示词，用户确认后才执行；锁定局部编辑范围，区分CAD结构与概念效果。自包含HTML工作台支持拖动绘制形状、图层编组、多页管理、保存、JSON/SVG导出及浏览器打印；不具备专业印前色彩管理、云同步或自动保证AI像素级保真。",
+        "category": "Productivity",
+        "capabilities": [
+          "展板需求与证据整理",
+          "可编辑几何布局",
+          "可控参考图权限",
+          "七类提示词模板",
+          "局部精准编辑约束",
+          "模块结构审查",
+          "HTML排版与交付验收"
+        ],
+        "defaultPrompt": [
+          "使用菠萝展板SK 1.1.2，先列制作大纲并向我确认第一阶段的目标。",
+          "根据已确认母版和参考图权限生成指定模块的正面、负面和英文补充提示词。",
+          "对比展板源图与目标图，识别局部修改是否改变了非授权区域。"
+        ],
+        "brandColor": "#173E35",
+        "brandColorDark": "#F7C84C",
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg"
+      },
+      "publication": {
+        "release_notes": "1.1.2：将可编辑网页升级为展板工作台，形状由拖动绘制，单击不创建；加入形状切换、图层和多页编辑，并保留旧布局JSON导入。延续1.1.1排版原则与逐图Prompt预审。"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+interface:
+  display_name: 菠萝展板sk
+  short_description: 逐步确认，管理参考图权限，制作可编辑母版与模块，逐项验收
+  default_prompt: 使用 $pineapple-board-sk，先列执行大纲并按八步逐阶段确认；任何图像生成或编辑前先展示参考清单及正面/负面/英文补充Prompt，待本次明确确认后才执行；逐图列明参考权威，采用可编辑几何布局、七类模块模板和独立验收。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
